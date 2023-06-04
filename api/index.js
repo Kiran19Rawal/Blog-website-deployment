@@ -1,16 +1,15 @@
-const express = require("express");
-const app = express();
-const dotenv = require("dotenv");
-const mongoose = require("mongoose");
-const authRoute = require("./routes/auth");
-const userRoute = require("./routes/users");
-const postRoute = require("./routes/posts");
-const categoryRoute = require("./routes/categories");
-const multer = require("multer");
-const path = require("path");
-const url = require("url");
-const fileURLToPath = url.fileURLToPath();
+import express from "express";
+import dotenv from "dotenv";
+import mongoose from "mongoose";
+import authRoute from "./routes/auth.js";
+import userRoute from "./routes/users.js";
+import postRoute from "./routes/posts.js";
+import categoryRoute from "./routes/categories.js";
+import multer from "multer";
+import path from "path";
+import { fileURLToPath } from "url";
 
+const app = express();
 //Dirname
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
