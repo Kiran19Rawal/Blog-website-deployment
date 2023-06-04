@@ -1,0 +1,26 @@
+{
+  "name": "reactblogsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm start --prefix ./api",
+    "client": "npm start --prefix ./client",
+    "dev": "concurrently \"npm run start\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kiran19Rawal/ReactBlogSite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kiran19Rawal/ReactBlogSite/issues"
+  },
+  "homepage": "https://github.com/Kiran19Rawal/ReactBlogSite#readme",
+  "dependencies": {
+    "concurrently": "^8.1.0"
+  }
+}
