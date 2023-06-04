@@ -8,7 +8,8 @@ const postRoute = require("./routes/posts");
 const categoryRoute = require("./routes/categories");
 const multer = require("multer");
 const path = require("path");
-import { fileURLToPath } from "url";
+const url = require("url");
+const fileURLToPath = url.fileURLToPath();
 
 //Dirname
 const __filename = fileURLToPath(import.meta.url);
